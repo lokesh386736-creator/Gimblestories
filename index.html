@@ -937,8 +937,14 @@ const PORTFOLIO = DATA.portfolio || [];
 
 /* =========================================================
    LOADER
+   (Runs directly rather than waiting on window's 'load' event —
+   by this point in the module, the DOM, data and CDN scripts are
+   already ready, and waiting on 'load' proved unreliable.)
 ========================================================= */
-window.addEventListener('load', () => {
+let loaderRan = false;
+function runLoader(){
+  if(loaderRan) return;
+  loaderRan = true;
   const ring = document.getElementById('loaderRing');
   const pct = document.getElementById('loaderPct');
   const loader = document.getElementById('loader');
@@ -955,7 +961,14 @@ window.addEventListener('load', () => {
       playHeroIntro();
     }
   });
-});
+}
+if(document.readyState === 'complete'){
+  runLoader();
+}else{
+  window.addEventListener('load', runLoader);
+  // extra safety: if 'load' still hasn't fired shortly after, run anyway
+  setTimeout(()=>{ if(!document.getElementById('loader').classList.contains('done')) runLoader(); }, 1200);
+}
 
 /* =========================================================
    CUSTOM CURSOR
