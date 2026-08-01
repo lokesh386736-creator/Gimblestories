@@ -1,0 +1,9 @@
+[build]
+  publish = "."
+
+# Make sure browsers/CDN always fetch the latest CMS content instead of
+# an old cached copy, so edits made in /admin show up immediately.
+[[headers]]
+  for = "/content/data.json"
+  [headers.values]
+    Cache-Control = "no-cache, no-store, must-revalidate"

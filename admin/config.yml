@@ -1,0 +1,161 @@
+backend:
+  name: git-gateway
+  branch: main
+
+# Where uploaded images/files are stored in the repo, and how the
+# live site should reference them (manual file upload happens here).
+media_folder: "uploads"
+public_folder: "/uploads"
+
+# Live preview link shown inside the CMS after publishing.
+site_url: https://YOUR-SITE-NAME.netlify.app
+display_url: https://YOUR-SITE-NAME.netlify.app
+
+publish_mode: simple
+
+collections:
+  - name: "content"
+    label: "Website Content"
+    files:
+      - name: "site"
+        label: "1. Site — All Sections"
+        file: "content/data.json"
+        description: "Every editable part of the website lives here. Save & Publish to push it live."
+        fields:
+
+          - label: "Contact Info & Social Links"
+            name: "site"
+            widget: "object"
+            collapsed: false
+            fields:
+              - { label: "Business / Brand Name", name: "brand_name", widget: "string" }
+              - { label: "Tagline", name: "tagline", widget: "string", required: false }
+              - { label: "Phone Number (shown on site, e.g. +91 88171 40950)", name: "phone_display", widget: "string" }
+              - { label: "Phone Number (for tap-to-call, e.g. +918817140950, no spaces)", name: "phone_dial", widget: "string" }
+              - { label: "WhatsApp Number (country code + number, no + or spaces, e.g. 918817140950)", name: "whatsapp_number", widget: "string" }
+              - { label: "WhatsApp Default Message", name: "whatsapp_message", widget: "string", required: false }
+              - { label: "Email Address", name: "email", widget: "string" }
+              - { label: "Studio Address", name: "address", widget: "string" }
+              - { label: "Map Search Text (used for the Google Map)", name: "map_query", widget: "string" }
+              - { label: "Instagram URL", name: "instagram_url", widget: "string" }
+              - { label: "Instagram Handle (displayed text)", name: "instagram_handle", widget: "string" }
+              - { label: "Facebook URL", name: "facebook_url", widget: "string" }
+              - { label: "YouTube Channel URL", name: "youtube_url", widget: "string" }
+
+          - label: "Hero Section (top banner)"
+            name: "hero"
+            widget: "object"
+            collapsed: false
+            fields:
+              - { label: "Small Label Above Heading (Eyebrow)", name: "eyebrow", widget: "string" }
+              - { label: "Heading Line 1 (short)", name: "title_line1", widget: "string" }
+              - { label: "Heading Line 2 (short, shown in gradient color)", name: "title_line2", widget: "string" }
+              - { label: "Subtitle (long paragraph)", name: "subtitle", widget: "text" }
+              - { label: "Stat 1 Number — Weddings Filmed", name: "stat_weddings", widget: "number" }
+              - { label: "Stat 2 Number — Countries Covered", name: "stat_countries", widget: "number" }
+              - { label: "Stat 3 Number — Industry Awards", name: "stat_awards", widget: "number" }
+
+          - label: "Showreel Videos (YouTube)"
+            name: "reels"
+            widget: "list"
+            label_singular: "Video"
+            summary: "{{title}}"
+            fields:
+              - { label: "YouTube Video Link (paste full URL, e.g. https://www.youtube.com/watch?v=XXXXXXXXXXX)", name: "youtube_url", widget: "string", hint: "Must be a real, public YouTube video link or the video will not play." }
+              - { label: "Small Tag (short label, e.g. Cinematic Highlight)", name: "tag", widget: "string" }
+              - { label: "Video Title (e.g. Kabir & Naina — Udaipur Palace Wedding)", name: "title", widget: "string" }
+
+          - label: "Services (grid of service cards)"
+            name: "services"
+            widget: "list"
+            label_singular: "Service"
+            summary: "{{title}}"
+            fields:
+              - label: "Icon"
+                name: "icon"
+                widget: "select"
+                options:
+                  - { label: "Camera", value: "i-camera" }
+                  - { label: "Film / Cinematography", value: "i-film" }
+                  - { label: "Heart", value: "i-heart" }
+                  - { label: "Plane / Destination", value: "i-plane" }
+                  - { label: "Drone", value: "i-drone" }
+                  - { label: "Sun / Haldi", value: "i-sun" }
+                  - { label: "Leaf / Mehendi", value: "i-leaf" }
+                  - { label: "Music / Sangeet", value: "i-music" }
+                  - { label: "Glass / Reception", value: "i-glass" }
+                  - { label: "Aperture / Candid", value: "i-aperture" }
+                  - { label: "Book / Album", value: "i-book" }
+                  - { label: "Play / Reels", value: "i-play" }
+              - { label: "Title (short)", name: "title", widget: "string" }
+              - { label: "Description (short, 1 line)", name: "desc", widget: "text" }
+
+          - label: "Portfolio Gallery"
+            name: "portfolio"
+            widget: "list"
+            label_singular: "Photo"
+            summary: "{{name}} ({{cat}})"
+            fields:
+              - label: "Category (used for filter buttons)"
+                name: "cat"
+                widget: "select"
+                options: ["wedding", "prewedding", "destination", "bride", "groom", "family"]
+              - { label: "Title (short)", name: "name", widget: "string" }
+              - { label: "Photo (upload a real photo — recommended)", name: "image", widget: "image", required: false, hint: "If left empty, a decorative color gradient is shown instead." }
+              - { label: "Card Height (advanced, leave as-is unless no photo is uploaded)", name: "ratio", widget: "string", default: "110%", required: false }
+              - { label: "Gradient Color 1 (used only if no photo is uploaded)", name: "color1", widget: "color", required: false }
+              - { label: "Gradient Color 2 (used only if no photo is uploaded)", name: "color2", widget: "color", required: false }
+
+          - label: "About / Studio Section"
+            name: "about"
+            widget: "object"
+            collapsed: false
+            fields:
+              - { label: "Small Label (Eyebrow)", name: "eyebrow", widget: "string" }
+              - { label: "Heading (plain part)", name: "title_main", widget: "string" }
+              - { label: "Heading (highlighted/gradient part)", name: "title_highlight", widget: "string" }
+              - { label: "Paragraph 1 (long)", name: "paragraph1", widget: "text" }
+              - { label: "Paragraph 2 (long)", name: "paragraph2", widget: "text" }
+              - { label: "Stat — Events Filmed", name: "stat_events", widget: "number" }
+              - { label: "Stat — Happy Clients", name: "stat_clients", widget: "number" }
+              - { label: "Stat — Awards Won", name: "stat_awards", widget: "number" }
+              - { label: "Founders' Quote (short)", name: "quote", widget: "text" }
+              - { label: "Quote Attribution", name: "quote_attribution", widget: "string" }
+
+          - label: "Process Steps (How We Work)"
+            name: "process"
+            widget: "list"
+            label_singular: "Step"
+            summary: "{{title}}"
+            fields:
+              - { label: "Step Title (short, e.g. Book / Plan / Shoot)", name: "title", widget: "string" }
+              - { label: "Step Description (long)", name: "desc", widget: "text" }
+
+          - label: "Testimonials (Client Reviews)"
+            name: "testimonials"
+            widget: "list"
+            label_singular: "Testimonial"
+            summary: "{{name}}"
+            fields:
+              - { label: "Initials (short, e.g. KN)", name: "initials", widget: "string" }
+              - { label: "Couple / Client Name (short)", name: "name", widget: "string" }
+              - { label: "Wedding Location (short)", name: "location", widget: "string" }
+              - { label: "Review Quote (long)", name: "quote", widget: "text" }
+
+          - label: "FAQs"
+            name: "faqs"
+            widget: "list"
+            label_singular: "Question"
+            summary: "{{question}}"
+            fields:
+              - { label: "Question (short)", name: "question", widget: "string" }
+              - { label: "Answer (long)", name: "answer", widget: "text" }
+              - { label: "Open by default on page load?", name: "open", widget: "boolean", default: false }
+
+          - label: "Footer"
+            name: "footer"
+            widget: "object"
+            collapsed: false
+            fields:
+              - { label: "Footer Brand Description (short)", name: "brand_text", widget: "text" }
+              - { label: "Copyright Line (short)", name: "copyright", widget: "string" }

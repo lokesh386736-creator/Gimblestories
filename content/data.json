@@ -1,0 +1,97 @@
+{
+  "site": {
+    "brand_name": "Gimbal Picture Creation",
+    "tagline": "Luxury Wedding Films & Photography",
+    "phone_display": "+91 88171 40950",
+    "phone_dial": "+918817140950",
+    "whatsapp_number": "918817140950",
+    "whatsapp_message": "Hi Gimbal Picture Creation, I'd like to enquire about wedding photography/films.",
+    "email": "hello@gimbalpicturecreation.com",
+    "address": "Bandra West, Mumbai, India",
+    "map_query": "Bandra West, Mumbai",
+    "instagram_url": "https://instagram.com/gimbalpicturecreation",
+    "instagram_handle": "@gimbalpicturecreation",
+    "facebook_url": "https://facebook.com/gimbalpicturecreation",
+    "youtube_url": "https://youtube.com/@gimbalpicturecreation"
+  },
+  "hero": {
+    "eyebrow": "Luxury Wedding Films · Est. 2016 · Pan-India & Destination",
+    "title_line1": "Crafting Timeless",
+    "title_line2": "Wedding Stories",
+    "subtitle": "We create cinematic wedding films, luxury photography, destination wedding coverage and unforgettable memories — frame by frame, forever.",
+    "stat_weddings": 500,
+    "stat_countries": 15,
+    "stat_awards": 12
+  },
+  "reels": [
+    { "youtube_url": "https://www.youtube.com/watch?v=73Js1MaQ8Ys", "tag": "Cinematic Highlight", "title": "Kabir & Naina — Udaipur Palace Wedding" },
+    { "youtube_url": "https://www.youtube.com/watch?v=uLAQaLC-7k0", "tag": "Destination Film", "title": "Dev & Ritika — Goa Beachside Sangeet" },
+    { "youtube_url": "https://www.youtube.com/watch?v=tt-FmY7WeOY", "tag": "Traditional Baraat", "title": "Arjun & Meher — Jaipur Fort Wedding" },
+    { "youtube_url": "https://www.youtube.com/watch?v=qJXqoN2FkGA", "tag": "Ceremony Reel", "title": "Yash & Simran — Mehendi In Motion" }
+  ],
+  "services": [
+    { "icon": "i-camera", "title": "Wedding Photography", "desc": "Timeless, gallery-worthy imagery from every ritual of your celebration." },
+    { "icon": "i-film", "title": "Wedding Cinematography", "desc": "Feature-quality films scored and graded like a motion picture." },
+    { "icon": "i-heart", "title": "Pre-Wedding Shoot", "desc": "A romantic story session at the location of your choice, before the big day." },
+    { "icon": "i-plane", "title": "Destination Wedding", "desc": "Full studio travel coverage for weddings anywhere in the world." },
+    { "icon": "i-drone", "title": "Drone Coverage", "desc": "Certified aerial pilots capturing scale, venue and skyline in motion." },
+    { "icon": "i-sun", "title": "Haldi Ceremony", "desc": "The colour, the laughter, the light — captured as it happens." },
+    { "icon": "i-leaf", "title": "Mehendi Ceremony", "desc": "Intricate detail shots paired with candid family moments." },
+    { "icon": "i-music", "title": "Sangeet Night", "desc": "Low-light, high-energy coverage of your celebration's biggest party." },
+    { "icon": "i-glass", "title": "Reception", "desc": "Elegant, editorial coverage of your grand entrance and toasts." },
+    { "icon": "i-aperture", "title": "Candid Photography", "desc": "Unposed, honest frames of real emotion throughout the day." },
+    { "icon": "i-book", "title": "Album Designing", "desc": "Hand-crafted, lay-flat heirloom albums designed frame by frame." },
+    { "icon": "i-play", "title": "Teasers & Reels", "desc": "Same-day social teasers cut for Instagram, ready to share instantly." }
+  ],
+  "portfolio": [
+    { "cat": "wedding", "name": "Palace Vows, Udaipur", "ratio": "135%", "color1": "#B000FF", "color2": "#FF7A00", "image": "" },
+    { "cat": "bride", "name": "The Bride, Golden Hour", "ratio": "100%", "color1": "#FF4FD8", "color2": "#FFC857", "image": "" },
+    { "cat": "destination", "name": "Beachside Mandap, Goa", "ratio": "115%", "color1": "#FF7A00", "color2": "#B000FF", "image": "" },
+    { "cat": "groom", "name": "Sherwani & Sunlight", "ratio": "95%", "color1": "#FFC857", "color2": "#FF4FD8", "image": "" },
+    { "cat": "prewedding", "name": "First Look, The Hills", "ratio": "128%", "color1": "#B000FF", "color2": "#FF4FD8", "image": "" },
+    { "cat": "family", "name": "Baraat, Full House", "ratio": "105%", "color1": "#FF7A00", "color2": "#FFC857", "image": "" },
+    { "cat": "wedding", "name": "Vows Under Marigold", "ratio": "118%", "color1": "#FF4FD8", "color2": "#B000FF", "image": "" },
+    { "cat": "destination", "name": "Sundowner, Dubai Marina", "ratio": "100%", "color1": "#FFC857", "color2": "#FF7A00", "image": "" },
+    { "cat": "bride", "name": "Mehendi Hands, Close Frame", "ratio": "90%", "color1": "#B000FF", "color2": "#FFC857", "image": "" },
+    { "cat": "family", "name": "Three Generations", "ratio": "120%", "color1": "#FF4FD8", "color2": "#FF7A00", "image": "" },
+    { "cat": "groom", "name": "Baraat Entry, Jaipur Fort", "ratio": "108%", "color1": "#FF7A00", "color2": "#B000FF", "image": "" },
+    { "cat": "prewedding", "name": "Monsoon Story, Munnar", "ratio": "96%", "color1": "#FFC857", "color2": "#FF4FD8", "image": "" }
+  ],
+  "about": {
+    "eyebrow": "The Studio",
+    "title_main": "Ten Years. One Obsession —",
+    "title_highlight": "Telling Your Story Right.",
+    "paragraph1": "Gimbal Picture Creation began in a spare room with one camera, one gimbal, and a stubborn belief that wedding films didn't have to look staged. A decade later, we're a full studio of cinematographers, photographers, editors and drone pilots — but the belief hasn't changed.",
+    "paragraph2": "We don't direct your wedding. We disappear into it — reading the room, chasing the light, and catching the moments that happen when nobody's posing. What comes back is a film and a gallery you'll actually want to watch again, not just store.",
+    "stat_events": 500,
+    "stat_clients": 1000,
+    "stat_awards": 15,
+    "quote": "We didn't want a photographer at our wedding. We wanted someone invisible who'd hand us back the truth of the day. That's exactly what we got.",
+    "quote_attribution": "— Founders' Note"
+  },
+  "process": [
+    { "title": "Book", "desc": "Reserve your date with a conversation, not a sales pitch. We learn your story, your families and your vision before anything else." },
+    { "title": "Plan", "desc": "Timelines, shot lists, locations and drone permissions — mapped weeks in advance so the day itself stays unhurried." },
+    { "title": "Shoot", "desc": "Lead artists, minimal gear footprint, maximum presence. We move through the day quietly, so you never have to perform for the camera." },
+    { "title": "Edit", "desc": "Every frame colour-graded by hand. Every cut scored to music that matches your story, not a template." },
+    { "title": "Deliver", "desc": "A private online gallery, a hand-bound heirloom album, and a film you'll watch again on every anniversary." }
+  ],
+  "testimonials": [
+    { "initials": "KN", "name": "Kabir & Naina", "location": "Udaipur Palace Wedding", "quote": "We felt like guests at our own wedding — never once like we were performing for a camera. The film still makes my mother cry." },
+    { "initials": "DR", "name": "Dev & Ritika", "location": "Goa Beachside Sangeet", "quote": "The drone footage of our beach mandap still gives me chills. Gimbal captured scale and intimacy in the same frame." },
+    { "initials": "AM", "name": "Arjun & Meher", "location": "Jaipur Fort Baraat", "quote": "Every candid shot looked like it belonged in a magazine, and yet nobody remembers being photographed. That's the real skill." },
+    { "initials": "YS", "name": "Yash & Simran", "location": "Mumbai Reception", "quote": "Booked them for photos, ended up obsessed with the teaser reel too. Our Instagram has never looked this cinematic." }
+  ],
+  "faqs": [
+    { "question": "How far in advance should we book?", "answer": "Most couples reserve their date 6–12 months out, especially for peak wedding season (October–February) and destination weddings. We take a limited number of weddings each season to keep our attention fully on you.", "open": true },
+    { "question": "Do you travel for destination weddings?", "answer": "Always. We've filmed weddings across Udaipur, Goa, Jaipur, Bali, Dubai and beyond. Travel, accommodation and logistics are built into a transparent destination package — no surprise costs.", "open": false },
+    { "question": "What's included in a wedding film package?", "answer": "Every package includes a cinematic highlight film, full-length ceremony coverage, a same-day teaser, and licensed music scoring. Drone coverage, extended editing and albums are available as add-ons.", "open": false },
+    { "question": "How long until we receive our photos and films?", "answer": "Your teaser arrives within 72 hours. The full photo gallery is delivered in 3–4 weeks, and your final cinematic film in 6–8 weeks, depending on the season.", "open": false },
+    { "question": "Do you handle drone coverage and permissions?", "answer": "Yes — our certified pilots manage all local permissions and no-fly zone checks so you don't have to think about the paperwork, only the shot.", "open": false },
+    { "question": "Can we customise our album design?", "answer": "Absolutely. Every album is designed by hand with your input on layout, cover material and paper finish — from matte lay-flat pages to leather-bound heirloom editions.", "open": false }
+  ],
+  "footer": {
+    "brand_text": "A luxury wedding photography & filmmaking studio crafting timeless stories across India and beyond, since 2016.",
+    "copyright": "© 2026 Gimbal Picture Creation. All rights reserved."
+  }
+}
